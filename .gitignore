@@ -1,0 +1,13 @@
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/test/
+/nbproject/private/
+/.nb-gradle/
+nbproject/
+
+build.xml
+manifest.mf
+
+*.log

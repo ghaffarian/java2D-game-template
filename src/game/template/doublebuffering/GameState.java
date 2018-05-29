@@ -1,5 +1,5 @@
 /*** In The Name of Allah ***/
-package game.doublebuffering;
+package game.template.doublebuffering;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

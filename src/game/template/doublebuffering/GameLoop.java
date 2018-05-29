@@ -1,5 +1,5 @@
 /*** In The Name of Allah ***/
-package game.bufferstrategy;
+package game.template.doublebuffering;
 
 /**
  * A very simple structure for the main game loop.
@@ -9,11 +9,9 @@ package game.bufferstrategy;
  * long running! Both must execute very quickly, without 
  * any waiting and blocking!
  * 
- * Detailed discussion on different game loop design
- * patterns is available in the following link:
+ * Detailed discussion on different game-loop design-patterns 
+ * is available in the following link:
  *    http://gameprogrammingpatterns.com/game-loop.html
- * 
- * @author Seyed Mohammad Ghaffarian
  */
 public class GameLoop implements Runnable {
 	
@@ -23,22 +21,22 @@ public class GameLoop implements Runnable {
 	 */
 	public static final int FPS = 30;
 	
-	private GameFrame canvas;
+	private GameCanvas canvas;
 	private GameState state;
 
-	public GameLoop(GameFrame frame) {
-		canvas = frame;
+	public GameLoop(GameCanvas gc) {
+		canvas = gc;
 	}
 	
-	/**
-	 * This must be called before the game loop starts.
-	 */
 	public void init() {
+		//
 		// Perform all initializations ...
+		//
 		state = new GameState();
 		canvas.addKeyListener(state.getKeyListener());
 		canvas.addMouseListener(state.getMouseListener());
 		canvas.addMouseMotionListener(state.getMouseMotionListener());
+		canvas.requestFocusInWindow();
 	}
 
 	@Override
@@ -57,5 +55,6 @@ public class GameLoop implements Runnable {
 			} catch (InterruptedException ex) {
 			}
 		}
+		
 	}
 }

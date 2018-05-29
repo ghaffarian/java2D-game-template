@@ -1,5 +1,5 @@
 /*** In The Name of Allah ***/
-package game.doublebuffering;
+package game.template.doublebuffering;
 
 import java.awt.Dimension;
 import java.awt.EventQueue;

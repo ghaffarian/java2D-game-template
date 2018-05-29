@@ -1,5 +1,5 @@
 /*** In The Name of Allah ***/
-package game.bufferstrategy;
+package game.template.bufferstrategy;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

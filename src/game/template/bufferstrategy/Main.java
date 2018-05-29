@@ -1,5 +1,5 @@
 /*** In The Name of Allah ***/
-package game.bufferstrategy;
+package game.template.bufferstrategy;
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;

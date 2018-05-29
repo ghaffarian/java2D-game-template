@@ -1,5 +1,5 @@
 /*** In The Name of Allah ***/
-package game.doublebuffering;
+package game.template.bufferstrategy;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

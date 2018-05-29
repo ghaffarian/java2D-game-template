@@ -10,3 +10,4 @@ This project consists of two different templates:
  1. Template based on classic **Double-Buffering** implementation.
  2. Template based on the more modern **Buffer-Strategy** implementation.
 
+There is also a basic example game implemented using the Buffer-Strategy template.
